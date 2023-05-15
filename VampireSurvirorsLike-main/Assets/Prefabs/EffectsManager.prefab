@@ -95,7 +95,91 @@ MonoBehaviour:
   Mixer: {fileID: 24100000, guid: f78727944c4cc8d49be9fcbd2c8fdec7, type: 2}
   tracks: []
   trackLayer: 
-  sounds: []
+  sounds:
+  - name: EnemyHit
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerLayer: HitFx
+    source: {fileID: 0}
+  - name: PlayerHit
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerLayer: HitFx
+    source: {fileID: 0}
+  - name: EnemyDeath
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerLayer: DeathFX
+    source: {fileID: 0}
+  - name: PlayerDeath
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerLayer: DeathFX
+    source: {fileID: 0}
+  - name: BatteShot
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerLayer: Projectile
+    source: {fileID: 0}
+  - name: KnifeShot
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerLayer: Projectile
+    source: {fileID: 0}
+  - name: HeadSpin
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerLayer: Projectile
+    source: {fileID: 0}
+  - name: RondinShot
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerLayer: Projectile
+    source: {fileID: 0}
+  - name: Win
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerLayer: Game
+    source: {fileID: 0}
+  - name: Loose
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerLayer: Game
+    source: {fileID: 0}
+  - name: LvlUp
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerLayer: Game
+    source: {fileID: 0}
+  - name: CollectXp
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerLayer: Game
+    source: {fileID: 0}
   playingAudio: []
   notPlayingAudio: []
   AudioObject: {fileID: 6990727964202178557, guid: 1b4404fd600716d44956aa0539ec6c22, type: 3}

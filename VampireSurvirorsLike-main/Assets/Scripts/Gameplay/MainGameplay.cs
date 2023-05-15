@@ -33,6 +33,7 @@ public class MainGameplay : MonoBehaviour
     [SerializeField] GameUIManager _gameUIManager;
 
     [SerializeField] GameObject _prefabXp;
+    [SerializeField] GameObject _prefabLife;
 
     #endregion
     
@@ -40,6 +41,7 @@ public class MainGameplay : MonoBehaviour
 
     public PlayerController Player => _player;
     public GameObject PrefabXP => _prefabXp;
+    public GameObject PrefabLife => _prefabLife;
     public GameState State { get; private set; }
     public List<EnemyController> Enemies => _enemies;
     public GameUIManager GameUIManager => _gameUIManager;

@@ -152,6 +152,21 @@ public class PlayerController : Unit
         Weapons.Add(weapon);
     }
 
+    public void CollectLife(int value)
+    {
+        if ((_life += value)>=_lifeMax)
+        {
+            _life = _lifeMax;
+        }
+        else
+        {
+            Debug.Log("value" + value);
+            _life += value;
+            Debug.Log(_life);
+        }
+
+        _lifeBar.SetValue(Life, LifeMax);
+    }
 
     public void CollectXP(int value)
     {

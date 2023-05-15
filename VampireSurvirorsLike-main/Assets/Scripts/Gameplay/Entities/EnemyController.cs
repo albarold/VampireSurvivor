@@ -1,6 +1,5 @@
-using System;
+
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>
@@ -73,7 +72,7 @@ public class EnemyController : Unit
 
         if (Life <= 0)
         {
-            EffectsManager.Instance.audioManager.Play("EnemyDeath");
+            
             Die();
         }
     }
@@ -82,8 +81,36 @@ public class EnemyController : Unit
     {
         MainGameplay.Instance.Enemies.Remove(this);
         GameObject.Destroy(gameObject);
-        var xp = GameObject.Instantiate(MainGameplay.Instance.PrefabXP, transform.position, Quaternion.identity);
-        xp.GetComponent<CollectableXp>().Initialize(1);
+        int n = Random.Range(1, 5);
+
+
+        // Exécution d'une action en fonction du nombre aléatoire généré
+        switch (n)
+        {
+            case 1:
+                { 
+                    var xp = GameObject.Instantiate(MainGameplay.Instance.PrefabXP, transform.position, Quaternion.identity);
+                    xp.GetComponent<CollectableXp>().Initialize(1);
+                    break;
+                }
+            case 2:
+                {
+                    var xp = GameObject.Instantiate(MainGameplay.Instance.PrefabXP, transform.position, Quaternion.identity);
+                    xp.GetComponent<CollectableXp>().Initialize(1);
+
+                    break;
+                }
+            case 3:
+                {
+                    var Life = GameObject.Instantiate(MainGameplay.Instance.PrefabLife, transform.position, Quaternion.identity);
+                    Life.GetComponent<CollectableLife>().Initialize(5);
+                    break;
+                }
+            case 4:
+                break;
+        }
+        
+        EffectsManager.Instance.audioManager.Play("EnemyDeath");
     }
 
     private void OnTriggerEnter2D(Collider2D col)

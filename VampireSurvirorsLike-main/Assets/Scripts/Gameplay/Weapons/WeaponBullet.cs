@@ -39,8 +39,9 @@ namespace Gameplay.Weapons
                 if (direction.sqrMagnitude > 0)
                 {
                     direction.Normalize();
-                    EffectsManager.Instance.audioManager.Play("KnifeShot");
+                    
                     go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
+                    EffectsManager.Instance.audioManager.Play("KnifeShot");
                 }
             }
             else 
@@ -51,12 +52,14 @@ namespace Gameplay.Weapons
 
                 if (direction.sqrMagnitude > 0)
                 {
+                    
                     direction.Normalize();
                     foreach (var item in Gos)
                     {
+
                         item.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
                     }
-
+                    EffectsManager.Instance.audioManager.Play("KnifeShot");
                 }
 
             }
