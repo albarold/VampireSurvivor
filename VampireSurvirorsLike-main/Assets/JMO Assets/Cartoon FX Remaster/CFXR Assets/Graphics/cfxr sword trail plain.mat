@@ -15,6 +15,7 @@ Material:
   - _CFXR_DISSOLVE_ALONG_UV_X
   - _CFXR_OVERLAYBLEND_RGB
   - _CFXR_SINGLE_CHANNEL
+  - _FLIPBOOK_BLENDING
   m_InvalidKeywords:
   - _
   - _CFXR_DITHERED_SHADOWS_OFF
@@ -95,7 +96,7 @@ Material:
     - _UseDissolveOffsetUV: 1
     - _UseEF: 0
     - _UseEmission: 0
-    - _UseFB: 0
+    - _UseFB: 1
     - _UseFontColor: 0
     - _UseLighting: 0
     - _UseLightingWorldPosOffset: 0

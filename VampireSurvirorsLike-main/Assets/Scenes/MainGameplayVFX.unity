@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_LocalPosition.y
@@ -148,19 +148,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.6948277
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.71917623
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -172,11 +172,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 91.973
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580332, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_Name
-      value: CFXR4 Sword Trail PLAIN (360 Spiral)
+      value: Bapt de basball
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: cullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: simulationSpeed
+      value: 1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: startDelay.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: ShapeModule.arc.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       propertyPath: m_Materials.Array.size
@@ -1130,7 +1170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5642766282230003982, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
       propertyPath: m_Name
-      value: CFXR2 Souls Escape
+      value: Loose
       objectReference: {fileID: 0}
     - target: {fileID: 7660836441076557303, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
       propertyPath: m_Materials.Array.size
@@ -1453,6 +1493,216 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1114781467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6703250321131892297, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_Name
+      value: CFXR4 Sword Trail PLAIN (360 Thin Spiral) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892298, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_SortMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892298, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_MeshDistribution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892298, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892298, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_ApplyActiveColorSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892298, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892299, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892299, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892299, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: lengthInSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892299, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892299, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: simulationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892299, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: startDelay.maxCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892299, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: startDelay.maxCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703250321131892300, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b987d41506d172419fa18578f6ac380, type: 3}
+--- !u!1001 &1245683891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580332, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_Name
+      value: CFXR4 Sword Trail PLAIN (360 Spiral) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: lengthInSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: simulationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: startDelay.maxCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580334, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: startDelay.maxCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_SortMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_MeshDistribution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_ApplyActiveColorSpace
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710139492206580335, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
 --- !u!1 &1305953635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +2199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5339739117810204693, guid: 26e1cb216e3635e4a820f58a1118d6b9, type: 3}
       propertyPath: m_Name
-      value: CFXR _BOOM_
+      value: CFXR _BOOM_Enemie_Kill
       objectReference: {fileID: 0}
     - target: {fileID: 5339739117810204694, guid: 26e1cb216e3635e4a820f58a1118d6b9, type: 3}
       propertyPath: m_Materials.Array.size
