@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using System.Collections.Generic;
 namespace Gameplay.Weapons
 {
     
@@ -28,170 +28,68 @@ namespace Gameplay.Weapons
             EnemyController enemy = MainGameplay.Instance.GetClosestEnemy(player.transform.position);
             if (enemy == null)
                 return;
-            switch (_projectileNumber)
+
+            var playerPosition = player.transform.position;
+            Vector3 direction = (enemy.transform.position - playerPosition).normalized;
+            Vector3 VerticalDir = new Vector3(direction.y, -direction.x, direction.z).normalized;
+            if (_projectileNumber==1)
             {
+                GameObject go = GameObject.Instantiate(_prefab, playerPosition, Quaternion.identity);
 
-                case 1:
-                    {
-                        var playerPosition = player.transform.position;
-                        GameObject go = GameObject.Instantiate(_prefab, playerPosition, Quaternion.identity);
-                        Vector3 direction = enemy.transform.position - playerPosition;
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            direction.Normalize();
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        break;
-                    }
-                case 2:
-                    {
-                        var playerPosition = player.transform.position;
-                        GameObject go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0, -0.5f, 0), Quaternion.identity);
-                        Vector3 direction = enemy.transform.position - playerPosition;
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            direction.Normalize();
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        go = GameObject.Instantiate(_prefab, playerPosition+new Vector3(0,0.5f,0), Quaternion.identity);
-                        direction = enemy.transform.position - playerPosition;
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            direction.Normalize();
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-                        break;
-                    }
-
-                case 4:
-                    {
-                        var playerPosition = player.transform.position;
-                        GameObject go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0, -0.5f, 0), Quaternion.identity);
-                        Vector3 direction = enemy.transform.position - playerPosition;
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            direction.Normalize();
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0, 0.5f, 0), Quaternion.identity);
-                        direction = enemy.transform.position - playerPosition;
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            direction.Normalize();
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-                        
-
-
-                        
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(-0.5f, -0.5f, 0), Quaternion.identity);
-                        direction = -direction;
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0.5f, 0.5f, 0), Quaternion.identity);
-                        
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-                        break;
-                    }
-
-                case 8:
-                    {
-                        var playerPosition = player.transform.position;
-                        GameObject go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0, -0.5f, 0), Quaternion.identity);
-                        Vector3 direction = enemy.transform.position - playerPosition;
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            direction.Normalize();
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0, 0.5f, 0), Quaternion.identity);
-                        direction = enemy.transform.position - playerPosition;
-                        if (direction.sqrMagnitude > 0)
-                        {
-                            direction.Normalize();
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(-0.5f, -0.5f, 0), Quaternion.identity);
-                        direction = -direction;
-                        if (direction.sqrMagnitude > 0)
-                        {
-
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0.5f, 0.5f, 0), Quaternion.identity);
-
-                        if (direction.sqrMagnitude > 0)
-                        {
-
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-                        
-
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(-0.5f, 0f, 0), Quaternion.identity);
-                        direction = new Vector3(direction.y,direction.x,direction.z);
-                        if (direction.sqrMagnitude > 0)
-                        {
-
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0.5f, 0f, 0), Quaternion.identity);
-
-                        if (direction.sqrMagnitude > 0)
-                        {
-
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-                        
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(-0.5f, 0f, 0), Quaternion.identity);
-                        direction = -direction;
-                        if (direction.sqrMagnitude > 0)
-                        {
-
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        go = GameObject.Instantiate(_prefab, playerPosition + new Vector3(0.5f, 0f, 0), Quaternion.identity);
-
-                        if (direction.sqrMagnitude > 0)
-                        {
-
-
-                            go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
-                        }
-
-                        break;
-                    }
+                if (direction.sqrMagnitude > 0)
+                {
+                    direction.Normalize();
+                    EffectsManager.Instance.audioManager.Play("KnifeShot");
+                    go.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
+                }
             }
-            
+            else 
+            {
+                GameObject[] Gos = new GameObject[2];
+                Gos[0] = GameObject.Instantiate(_prefab, playerPosition + VerticalDir*0.3f, Quaternion.identity);
+                Gos[1] = GameObject.Instantiate(_prefab, playerPosition - VerticalDir*0.3f, Quaternion.identity);
+
+                if (direction.sqrMagnitude > 0)
+                {
+                    direction.Normalize();
+                    foreach (var item in Gos)
+                    {
+                        item.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
+                    }
+
+                }
+
+            }
+            if (_projectileNumber >= 3)
+            {
+                GameObject go = GameObject.Instantiate(_prefab, playerPosition, Quaternion.identity);
+
+                if (direction.sqrMagnitude > 0)
+                {
+                    direction.Normalize();
+
+                    go.GetComponent<Bullet>().Initialize(-direction, GetDamage(), _speed);
+                }
+            }
+            if (_projectileNumber > 4)
+            {
+                GameObject[] Gos = new GameObject[2];
+                Gos[0] = GameObject.Instantiate(_prefab, playerPosition, Quaternion.identity);
+                Gos[1] = GameObject.Instantiate(_prefab, playerPosition, Quaternion.identity);
+
+                if (direction.sqrMagnitude > 0)
+                {
+                    direction.Normalize();
+
+                    Gos[0].GetComponent<Bullet>().Initialize(VerticalDir, GetDamage(), _speed);
+                    Gos[1].GetComponent<Bullet>().Initialize(-VerticalDir, GetDamage(), _speed);
+
+
+                }
+            }
+
+
+
         }
     }
 }

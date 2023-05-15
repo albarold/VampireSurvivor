@@ -126,12 +126,14 @@ public class PlayerController : Unit
             return;
 
         _life -= damage;
-
+        EffectsManager.Instance.audioManager.Play("PlayerHit");
         _lifeBar.SetValue(Life, LifeMax);
 
         if (Life <= 0)
         {
+
             _isDead = true;
+            EffectsManager.Instance.audioManager.Play("PlayerDeath");
             OnDeath?.Invoke();
         }
     }
@@ -156,12 +158,14 @@ public class PlayerController : Unit
         if (_levelUpData.IsLevelMax(_level))
             return;
 
+        EffectsManager.Instance.audioManager.Play("CollectXp");
         _xp += value;
 
         int nextLevel = _level + 1;
         int currentLevelMaxXP = _levelUpData.GetXpForLevel(nextLevel);
         if (_xp >= currentLevelMaxXP)
         {
+            EffectsManager.Instance.audioManager.Play("LvlUp");
             _level++;
             OnLevelUp?.Invoke(_level);
             currentLevelMaxXP = _levelUpData.GetXpForLevel(nextLevel);
