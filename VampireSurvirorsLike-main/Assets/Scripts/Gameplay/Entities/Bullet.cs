@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] int _team;
     [SerializeField] float _timeToLive = 10.0f;
 
+    [SerializeField] bool Indestructible;
     float _speed = 10;
     float _damage = 5;
     Vector3 _direction;
@@ -37,13 +38,17 @@ public class Bullet : MonoBehaviour
     {
         var other = HitWithParent.GetComponent<Unit>(col);
 
-        if (other == null)
+        if (other == null && !Indestructible)
         {
             GameObject.Destroy(gameObject);
         }
-        else if (other.Team != _team)
+        else if (other.Team != _team )
         {
-            GameObject.Destroy(gameObject);
+            if (!Indestructible)
+            {
+                GameObject.Destroy(gameObject);
+            }
+            
 
             other.Hit(_damage);
         }

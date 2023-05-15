@@ -69,8 +69,11 @@ public class EnemyController : Unit
     {
         _life -= damage;
 
+        EffectsManager.Instance.audioManager.Play("EnemyHit");
+
         if (Life <= 0)
         {
+            EffectsManager.Instance.audioManager.Play("EnemyDeath");
             Die();
         }
     }

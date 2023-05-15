@@ -142,12 +142,14 @@ public class MainGameplay : MonoBehaviour
 
     void OnPlayerDeath()
     {
+        EffectsManager.Instance.audioManager.Play("Loose");
         State = GameState.GameOver;
         _gameUIManager.DisplayGameOver();
     }
 
     void SetVictory()
     {
+        EffectsManager.Instance.audioManager.Play("Win");
         State = GameState.GameOver;
         _gameUIManager.DisplayVictory();
     }

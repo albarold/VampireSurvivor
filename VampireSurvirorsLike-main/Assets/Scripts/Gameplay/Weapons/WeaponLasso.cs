@@ -31,7 +31,7 @@ namespace Gameplay.Weapons
                 case 1:
                     {
                         Vector2 position = (Vector2)player.transform.position + Vector2.right * player.DirectionX * 2;
-
+                        EffectsManager.Instance.audioManager.Play("BatteShot");
                         GameObject go = GameObject.Instantiate(_prefab, position, Quaternion.identity, player.transform);
                         break;
                     }
@@ -46,6 +46,7 @@ namespace Gameplay.Weapons
                         position = (Vector2)player.transform.position + Vector2.left * player.DirectionX * 2;
                         go = GameObject.Instantiate(_prefab, position, Quaternion.identity, player.transform);
                         go.GetComponent<Bullet>().Initialize(new Vector3(), GetDamage(), 0);
+                        EffectsManager.Instance.audioManager.Play("BatteShot");
                         break;
                     }
                 
@@ -67,7 +68,7 @@ namespace Gameplay.Weapons
                         position = (Vector2)player.transform.position + Vector2.down * player.DirectionX * 2;
                         go = GameObject.Instantiate(_prefab, position, Quaternion.identity, player.transform);
                         go.GetComponent<Bullet>().Initialize(new Vector3(), GetDamage(), 0);
-
+                        EffectsManager.Instance.audioManager.Play("BatteShot");
 
 
                         break;

@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca8c8437b00b3a4ca793e4e5492b008, type: 3}
-  m_Name: Bullet 3
+  m_Name: Head
   m_EditorClassIdentifier: 
   _weapon:
-    rid: 0
+    rid: 3428052207234187264
   _slotIndex: 1
   references:
     version: 2
     RefIds:
-    - rid: 0
-      type: {class: WeaponBullet, ns: Gameplay.Weapons, asm: Assembly-CSharp}
+    - rid: 3428052207234187264
+      type: {class: WeaponHead, ns: Gameplay.Weapons, asm: Assembly-CSharp}
       data:
-        _damageMin: 12
-        _damageMax: 25
-        _coolDown: 1
-        _projectileNumber: 5
-        _prefab: {fileID: 3633932044844237191, guid: 4660ac6ef21504147b176616fca71ee3, type: 3}
-        _speed: 7
+        _damageMin: 15
+        _damageMax: 30
+        _coolDown: 10000
+        _projectileNumber: 0
+        _prefab: {fileID: 3633932044844237191, guid: 6079f10824cb7a54eb9e34415ed7554a, type: 3}
+        _speed: 0.4
