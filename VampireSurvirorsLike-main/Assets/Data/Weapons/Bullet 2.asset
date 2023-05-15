@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weapon:
     rid: 0
-  _slotIndex: 0
+  _slotIndex: 1
   references:
     version: 2
     RefIds:
@@ -24,5 +24,6 @@ MonoBehaviour:
         _damageMin: 10
         _damageMax: 15
         _coolDown: 0.5
+        _projectileNumber: 4
         _prefab: {fileID: 3633932044844237191, guid: 4660ac6ef21504147b176616fca71ee3, type: 3}
         _speed: 5

@@ -10,6 +10,7 @@ public abstract class WeaponBase
     [SerializeField] protected float _damageMin;
     [SerializeField] protected float _damageMax;
     [SerializeField] protected float _coolDown;
+    [SerializeField] protected float _projectileNumber;
     
     public int Slot { get; private set; }
     
