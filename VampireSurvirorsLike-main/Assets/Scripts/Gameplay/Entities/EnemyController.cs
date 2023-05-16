@@ -12,6 +12,8 @@ public class EnemyController : Unit
 {
     public GameObject Head;
     public GameObject Body;
+    public GameObject Blood;
+    public GameObject Bloodsplash;
     GameObject _player;
     Rigidbody2D _rb;
     EnemyData _data;
@@ -91,7 +93,8 @@ public class EnemyController : Unit
         _life -= damage;
 
         EffectsManager.Instance.audioManager.Play("EnemyHit");
-        EffectsManager.Instance.vfxManager.PlayFx("Blood",transform.position);
+        GameObject slash =GameObject.Instantiate(Bloodsplash, transform.position, Quaternion.identity);
+        Destroy(slash, 1);
 
         if (Life <= 0)
         {
@@ -105,6 +108,7 @@ public class EnemyController : Unit
         MainGameplay.Instance.Enemies.Remove(this);
         GameObject.Destroy(gameObject);
         int n = Random.Range(1, 5);
+        GameObject.Instantiate(Blood, transform.position, Quaternion.identity);
         GameObject _head= GameObject.Instantiate(Head, transform.position, Quaternion.identity);
         _head.GetComponent<Rigidbody2D>().AddForce(-direction * 5, ForceMode2D.Impulse);
         GameObject.Instantiate(Body, transform.position, Quaternion.identity);

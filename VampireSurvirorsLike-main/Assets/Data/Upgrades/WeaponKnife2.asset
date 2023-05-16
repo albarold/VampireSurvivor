@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WeaponKnife2
   m_EditorClassIdentifier: 
   _description: Double Knife!
-  _sprite: {fileID: 21300000, guid: 8ad2b0639cf6a694eb216d0adad6150b, type: 3}
+  _sprite: {fileID: 21300000, guid: 35f8a737aeb05a145b45d0511c737e94, type: 3}
   _upgrade:
     rid: 0
   _nextUpgrades:

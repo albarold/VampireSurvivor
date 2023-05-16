@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WeaponBat2
   m_EditorClassIdentifier: 
   _description: DOUBLE BASEBALL BAT
-  _sprite: {fileID: 21300000, guid: 3dbb8debab89fbf4087e2345015261e2, type: 3}
+  _sprite: {fileID: 21300000, guid: 852d93f9eecce654ba29956cf35e6ed6, type: 3}
   _upgrade:
     rid: 0
   _nextUpgrades: []

@@ -102,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Head: {fileID: 3633932044844237191, guid: 6232bc4f9135a854c80d5aabe668379e, type: 3}
   Body: {fileID: 3633932044844237191, guid: 6fefeb2e6ef8ad548b1a66ef0735086a, type: 3}
+  Blood: {fileID: 8516029644490419980, guid: 4daa6ee77a0c0364c9d99117047f676d, type: 3}
+  Bloodsplash: {fileID: 3496328448439650183, guid: a0deebadd6a3afb4cb94d4258bf1d0a1, type: 3}
 --- !u!50 &4727944546984906339
 Rigidbody2D:
   serializedVersion: 4
