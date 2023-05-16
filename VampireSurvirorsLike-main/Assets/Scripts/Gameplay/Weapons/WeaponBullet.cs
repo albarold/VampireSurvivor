@@ -36,6 +36,8 @@ namespace Gameplay.Weapons
             {
                 GameObject go = GameObject.Instantiate(_prefab, playerPosition, Quaternion.identity);
 
+                go.transform.right = -direction;
+
                 if (direction.sqrMagnitude > 0)
                 {
                     direction.Normalize();
@@ -56,7 +58,7 @@ namespace Gameplay.Weapons
                     direction.Normalize();
                     foreach (var item in Gos)
                     {
-
+                        item.transform.right = -direction;
                         item.GetComponent<Bullet>().Initialize(direction, GetDamage(), _speed);
                     }
                     EffectsManager.Instance.audioManager.Play("KnifeShot");
@@ -66,6 +68,7 @@ namespace Gameplay.Weapons
             if (_projectileNumber >= 3)
             {
                 GameObject go = GameObject.Instantiate(_prefab, playerPosition, Quaternion.identity);
+                go.transform.right = direction;
 
                 if (direction.sqrMagnitude > 0)
                 {
@@ -83,6 +86,9 @@ namespace Gameplay.Weapons
                 if (direction.sqrMagnitude > 0)
                 {
                     direction.Normalize();
+
+                    Gos[1].transform.right = new Vector3(direction.y,-direction.x,0);
+                    Gos[0].transform.right = new Vector3(-direction.y,direction.x,0);
 
                     Gos[0].GetComponent<Bullet>().Initialize(VerticalDir, GetDamage(), _speed);
                     Gos[1].GetComponent<Bullet>().Initialize(-VerticalDir, GetDamage(), _speed);
