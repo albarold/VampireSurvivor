@@ -150,7 +150,7 @@ public class PlayerController : Unit
             _life -= damage;
 
             _lifeBar.SetValue(Life, LifeMax);
-            EffectsManager.Instance.audioManager.Play("PlayerHit");
+            
             GameObject slash = GameObject.Instantiate(Bloodsplash, transform.position, Quaternion.identity);
             Destroy(slash, 1);
             if (Life <= 0)
@@ -163,6 +163,7 @@ public class PlayerController : Unit
             }
             IsInvicible = true;
             Invicible = 0.5f;
+            EffectsManager.Instance.audioManager.Play("PlayerHit");
         }
     }
 
