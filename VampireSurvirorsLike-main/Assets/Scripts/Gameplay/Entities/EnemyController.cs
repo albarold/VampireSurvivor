@@ -91,10 +91,11 @@ public class EnemyController : Unit
         _life -= damage;
 
         EffectsManager.Instance.audioManager.Play("EnemyHit");
+        EffectsManager.Instance.vfxManager.PlayFx("Blood",transform.position);
 
         if (Life <= 0)
         {
-            
+            EffectsManager.Instance.vfxManager.PlayFx("Hit", transform.position);
             Die();
         }
     }

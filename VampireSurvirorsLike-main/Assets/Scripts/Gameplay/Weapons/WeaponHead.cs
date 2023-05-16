@@ -11,6 +11,9 @@ namespace Gameplay.Weapons
 
         [SerializeField] GameObject _prefab;
         [SerializeField] float _speed;
+        [SerializeField] Sprite NoheadPlayer;
+        [SerializeField] RuntimeAnimatorController NoheadAnim;
+        bool NoHead=false;
 
         GameObject go;
         public WeaponHead()
@@ -24,6 +27,11 @@ namespace Gameplay.Weapons
         }
         public override void Update( PlayerController player )
         {
+            if (!NoHead)
+            {
+                player.gameObject.GetComponent<SpriteRenderer>().sprite = NoheadPlayer;
+                player.gameObject.GetComponent<Animator>().runtimeAnimatorController = NoheadAnim;
+            }
             var playerPosition = player.transform.position;
             if (go == null)
             {
@@ -32,7 +40,7 @@ namespace Gameplay.Weapons
             }
 
             go.transform.RotateAround(playerPosition, Vector3.forward, _speed);
-            
+            go.transform.right = Vector3.right;
 
             Vector3 relativePos = go.transform.position - playerPosition;
             float dist = Vector3.Distance(go.transform.position, playerPosition);

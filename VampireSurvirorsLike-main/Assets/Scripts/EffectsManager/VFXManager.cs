@@ -68,6 +68,7 @@ public class VFXManager : MonoBehaviour
             if (NewVfxObject == null)
             {
                 NewVfxObject = Initialize(v);
+                NewVfxObject.transform.position = position;
             }
 
             if (v == null)
@@ -106,6 +107,7 @@ public class VFXManager : MonoBehaviour
             if (NewVfxObject == null)
             {
                 NewVfxObject = Initialize(v);
+                NewVfxObject.transform.position = position;
             }
 
             if (v == null)
@@ -147,6 +149,7 @@ public class VFXManager : MonoBehaviour
             if (NewVfxObject == null)
             {
                 NewVfxObject = Initialize(v);
+                NewVfxObject.transform.position = position;
             }
 
             if (v == null)

@@ -13,6 +13,8 @@ public class PlayerController : Unit
 
     [SerializeField] LifeBar _lifeBar;
     float LockMove = 0;
+    float Invicible = 0;
+    bool IsInvicible = false;
 
     public Action OnDeath { get; set; }
     public Action<int, int, int> OnXP { get; set; }
@@ -91,6 +93,11 @@ public class PlayerController : Unit
         if (LockMove < 0)
         {
             Move();
+        } 
+        Invicible -= Time.deltaTime;
+        if (Invicible < 0)
+        {
+            IsInvicible = false;
         }
     }
 
@@ -134,19 +141,26 @@ public class PlayerController : Unit
 
     public override void Hit(float damage)
     {
-        if (_isDead)
-            return;
-
-        _life -= damage;
-        
-        _lifeBar.SetValue(Life, LifeMax);
-        EffectsManager.Instance.audioManager.Play("PlayerHit");
-        if (Life <= 0)
+        if (!IsInvicible)
         {
+            if (_isDead)
+                return;
 
-            _isDead = true;
-            EffectsManager.Instance.audioManager.Play("PlayerDeath");
-            OnDeath?.Invoke();
+            _life -= damage;
+
+            _lifeBar.SetValue(Life, LifeMax);
+            EffectsManager.Instance.audioManager.Play("PlayerHit");
+            EffectsManager.Instance.vfxManager.PlayFx("Blood", transform.position);
+            if (Life <= 0)
+            {
+                _rb.velocity = new Vector2();
+                _isDead = true;
+                EffectsManager.Instance.audioManager.Play("PlayerDeath");
+                EffectsManager.Instance.vfxManager.PlayFx("Loose", transform.position);
+                OnDeath?.Invoke();
+            }
+            IsInvicible = true;
+            Invicible = 0.5f;
         }
     }
 
