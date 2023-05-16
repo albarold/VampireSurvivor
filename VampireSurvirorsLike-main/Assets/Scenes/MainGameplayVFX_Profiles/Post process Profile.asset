@@ -90,7 +90,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 29
+    value: 6
   intensityX:
     overrideState: 1
     value: 1
@@ -173,6 +173,7 @@ MonoBehaviour:
   - {fileID: -7396439919617044984}
   - {fileID: -4377868096819367424}
   - {fileID: 628647775597484803}
+  - {fileID: 5557423364673468637}
 --- !u!114 &628647775597484803
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -198,7 +199,7 @@ MonoBehaviour:
     defaultState: 1
   tonemapper:
     overrideState: 1
-    value: 1
+    value: 2
   toneCurveToeStrength:
     overrideState: 0
     value: 0
@@ -225,8 +226,8 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -6
   tint:
     overrideState: 0
     value: 0
@@ -243,8 +244,8 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 0.24
   contrast:
     overrideState: 0
     value: 0
@@ -1545,12 +1546,59 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   spectralLut:
-    overrideState: 1
+    overrideState: 0
     value: {fileID: 0}
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.234
+    value: 0.115
   fastMode:
+    overrideState: 0
+    value: 0
+--- !u!114 &5557423364673468637
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
     overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 9.9
+  threshold:
+    overrideState: 1
+    value: 1.09
+  softKnee:
+    overrideState: 0
+    value: 0.5
+  clamp:
+    overrideState: 0
+    value: 65472
+  diffusion:
+    overrideState: 0
+    value: 7
+  anamorphicRatio:
+    overrideState: 0
+    value: 0
+  color:
+    overrideState: 1
+    value: {r: 1, g: 0.995283, b: 0.9970149, a: 1}
+  fastMode:
+    overrideState: 0
+    value: 0
+  dirtTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 0
     value: 0
