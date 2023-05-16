@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
-  m_Name: WeaponBullet2
+  m_Name: WeaponBat3
   m_EditorClassIdentifier: 
-  _description: Bullet level 2
-  _sprite: {fileID: 21300000, guid: 82176bcef51ab6b4583f29287edb1455, type: 3}
+  _description: DOUBLE BASEBALL BAT
+  _sprite: {fileID: 21300000, guid: 3dbb8debab89fbf4087e2345015261e2, type: 3}
   _upgrade:
     rid: 0
-  _nextUpgrades:
-  - {fileID: 11400000, guid: 5347a91c0b6d6df409bf2cc33f6cd72a, type: 2}
+  _nextUpgrades: []
   references:
     version: 2
     RefIds:
     - rid: 0
       type: {class: WeaponUpgrade, ns: , asm: Assembly-CSharp}
       data:
-        _data: {fileID: 11400000, guid: 4526b650c7f3f4a4c9a5418d51ed5195, type: 2}
+        _data: {fileID: 11400000, guid: 58accf7dec28bea46a906a70e372f66b, type: 2}

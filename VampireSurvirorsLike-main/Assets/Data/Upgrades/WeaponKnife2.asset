@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
-  m_Name: WeaponHead
+  m_Name: WeaponKnife2
   m_EditorClassIdentifier: 
-  _description: Slice your head off
-  _sprite: {fileID: 21300000, guid: 3ef28711cfe5ddd45878f0e137b4872d, type: 3}
+  _description: Double Knife!
+  _sprite: {fileID: 21300000, guid: 8ad2b0639cf6a694eb216d0adad6150b, type: 3}
   _upgrade:
     rid: 0
-  _nextUpgrades: []
+  _nextUpgrades:
+  - {fileID: 11400000, guid: 6b537eeaa4184334db919e6a09060bbf, type: 2}
   references:
     version: 2
     RefIds:
     - rid: 0
       type: {class: WeaponUpgrade, ns: , asm: Assembly-CSharp}
       data:
-        _data: {fileID: 11400000, guid: 3062f5bc4911abb4c92bfec045cbc0bb, type: 2}
+        _data: {fileID: 11400000, guid: a908fe6ac51997244bddceac73960146, type: 2}

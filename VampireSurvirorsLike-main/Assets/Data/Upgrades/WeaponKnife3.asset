@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
-  m_Name: WeaponLasso 1
+  m_Name: WeaponKnife3
   m_EditorClassIdentifier: 
-  _description: The mighty lasso !
-  _sprite: {fileID: 21300000, guid: 82176bcef51ab6b4583f29287edb1455, type: 3}
+  _description: TRIPLE KNIFEEEEEEEE!!
+  _sprite: {fileID: 21300000, guid: 8ad2b0639cf6a694eb216d0adad6150b, type: 3}
   _upgrade:
     rid: 0
   _nextUpgrades:
-  - {fileID: 11400000, guid: d20f12f06ed7cf74baaf13fa216634ac, type: 2}
+  - {fileID: 11400000, guid: 5347a91c0b6d6df409bf2cc33f6cd72a, type: 2}
   references:
     version: 2
     RefIds:
     - rid: 0
       type: {class: WeaponUpgrade, ns: , asm: Assembly-CSharp}
       data:
-        _data: {fileID: 11400000, guid: 58accf7dec28bea46a906a70e372f66b, type: 2}
+        _data: {fileID: 11400000, guid: 4526b650c7f3f4a4c9a5418d51ed5195, type: 2}

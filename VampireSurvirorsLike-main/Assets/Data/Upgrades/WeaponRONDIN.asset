@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
-  m_Name: WeaponBullet3
+  m_Name: WeaponRONDIN
   m_EditorClassIdentifier: 
-  _description: Bullet level 3
-  _sprite: {fileID: 21300000, guid: 82176bcef51ab6b4583f29287edb1455, type: 3}
+  _description: GROS RONDIN!
+  _sprite: {fileID: 21300000, guid: 7084380c109250c49975e5c64096e0a1, type: 3}
   _upgrade:
     rid: 0
-  _nextUpgrades: []
+  _nextUpgrades:
+  - {fileID: 0}
   references:
     version: 2
     RefIds:
     - rid: 0
       type: {class: WeaponUpgrade, ns: , asm: Assembly-CSharp}
       data:
-        _data: {fileID: 11400000, guid: b3025f93bace67c4b801ef0ff2c2d8ef, type: 2}
+        _data: {fileID: 11400000, guid: a575d7763fd3a834abff2b7481cf9cdc, type: 2}

@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
-  m_Name: WeaponThunder0
+  m_Name: WeaponKnife
   m_EditorClassIdentifier: 
-  _description: Thunder !!
-  _sprite: {fileID: 21300000, guid: 82176bcef51ab6b4583f29287edb1455, type: 3}
+  _description: Unlock the Knife!!
+  _sprite: {fileID: 21300000, guid: 8ad2b0639cf6a694eb216d0adad6150b, type: 3}
   _upgrade:
     rid: 0
   _nextUpgrades:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 1436b540ef0e07049a99ab4faec6b022, type: 2}
   references:
     version: 2
     RefIds:
     - rid: 0
       type: {class: WeaponUpgrade, ns: , asm: Assembly-CSharp}
       data:
-        _data: {fileID: 11400000, guid: a575d7763fd3a834abff2b7481cf9cdc, type: 2}
+        _data: {fileID: 11400000, guid: 7fc9e32731c831e46ba0de5e74790c60, type: 2}

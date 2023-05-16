@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46a8eaf7f7549014c8d97c971d54d2b0, type: 3}
-  m_Name: WeaponLasso 2
+  m_Name: WeaponBat2
   m_EditorClassIdentifier: 
-  _description: The mighty lasso !
-  _sprite: {fileID: 21300000, guid: 82176bcef51ab6b4583f29287edb1455, type: 3}
+  _description: DOUBLE BASEBALL BAT
+  _sprite: {fileID: 21300000, guid: 3dbb8debab89fbf4087e2345015261e2, type: 3}
   _upgrade:
     rid: 0
   _nextUpgrades: []
@@ -23,4 +23,4 @@ MonoBehaviour:
     - rid: 0
       type: {class: WeaponUpgrade, ns: , asm: Assembly-CSharp}
       data:
-        _data: {fileID: 11400000, guid: 35cc97fd99d38d449b64a21ab6fabbf7, type: 2}
+        _data: {fileID: 11400000, guid: 58accf7dec28bea46a906a70e372f66b, type: 2}
