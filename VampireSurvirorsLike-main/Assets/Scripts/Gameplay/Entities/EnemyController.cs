@@ -14,6 +14,7 @@ public class EnemyController : Unit
     Rigidbody2D _rb;
     EnemyData _data;
     private List<PlayerController> _playersInTrigger = new List<PlayerController>();
+    float LockMove;
 
     private void Awake()
     {
@@ -43,7 +44,13 @@ public class EnemyController : Unit
 
     void FixedUpdate()
     {
-        MoveToPlayer();
+        LockMove -= Time.deltaTime;
+        if (LockMove<0)
+        {
+            MoveToPlayer();
+        }
+
+       
     }
 
     private void MoveToPlayer()
@@ -133,5 +140,14 @@ public class EnemyController : Unit
             if (_playersInTrigger.Contains(other))
                 _playersInTrigger.Remove(other);
         }
+    }
+
+    public override void Knockback(Vector3 Origin)
+    {
+        LockMove = 0.2f;
+        
+        Debug.Log("test");
+        Vector3 dir = (transform.position - Origin).normalized;
+        _rb.AddForce(dir * 3f, ForceMode2D.Impulse);
     }
 }

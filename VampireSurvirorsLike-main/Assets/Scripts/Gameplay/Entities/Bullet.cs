@@ -37,6 +37,8 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         var other = HitWithParent.GetComponent<Unit>(col);
+        other.Hit(_damage);
+        other.Knockback(transform.position);
 
         if (other == null && !Indestructible)
         {
@@ -50,7 +52,7 @@ public class Bullet : MonoBehaviour
             }
             
 
-            other.Hit(_damage);
+            
         }
     }
 }

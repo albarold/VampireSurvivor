@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
-using Gameplay.Weapons;
 using UnityEngine;
 
 /// <summary>
@@ -14,6 +12,7 @@ public class PlayerController : Unit
     [SerializeField] LevelUpData _levelUpData;
 
     [SerializeField] LifeBar _lifeBar;
+    float LockMove = 0;
 
     public Action OnDeath { get; set; }
     public Action<int, int, int> OnXP { get; set; }
@@ -88,7 +87,11 @@ public class PlayerController : Unit
 
     void FixedUpdate()
     {
-        Move();
+        LockMove -= Time.deltaTime;
+        if (LockMove < 0)
+        {
+            Move();
+        }
     }
 
     private void Shoot()
@@ -108,6 +111,15 @@ public class PlayerController : Unit
         {
             _inputs.Normalize();
             _rb.velocity = _inputs * _playerData.MoveSpeed;
+
+            if (_inputs.x >0)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }
             
             _lastDirection = _inputs;
 
@@ -126,9 +138,9 @@ public class PlayerController : Unit
             return;
 
         _life -= damage;
-        EffectsManager.Instance.audioManager.Play("PlayerHit");
+        
         _lifeBar.SetValue(Life, LifeMax);
-
+        EffectsManager.Instance.audioManager.Play("PlayerHit");
         if (Life <= 0)
         {
 
@@ -213,5 +225,13 @@ public class PlayerController : Unit
         
         _life += valueToAdd;
         _lifeMax += valueToAdd;
+    }
+
+    public override void Knockback(Vector3 Origin)
+    {
+        LockMove = 0.2f;
+        Vector3 dir = (transform.position - Origin).normalized;
+        _rb.AddForce(dir*1.5f, ForceMode2D.Impulse);
+        Debug.Log("tqt");
     }
 }
