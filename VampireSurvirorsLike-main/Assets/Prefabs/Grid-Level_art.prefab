@@ -33594,7 +33594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809022229000208677}
-  - component: {fileID: 809022229000208674}
+  - component: {fileID: 721155816}
   m_Layer: 0
   m_Name: Post process
   m_TagString: Untagged
@@ -33617,7 +33617,7 @@ Transform:
   m_Father: {fileID: 809022228613468906}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &809022229000208674
+--- !u!114 &721155816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33626,14 +33626,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 809022229000208679}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IsGlobal: 1
-  priority: 1
+  sharedProfile: {fileID: 11400000, guid: d68f2ba0e0004dc4eaeb2bf1f1e47dba, type: 2}
+  isGlobal: 1
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: fca5016e6c0336f479a15f3f7412c2b5, type: 2}
+  priority: 0
 --- !u!1 &809022229114009200
 GameObject:
   m_ObjectHideFlags: 0
