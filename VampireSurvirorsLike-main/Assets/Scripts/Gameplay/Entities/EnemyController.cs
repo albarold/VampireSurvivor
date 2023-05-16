@@ -10,9 +10,12 @@ using UnityEngine;
 /// </summary>
 public class EnemyController : Unit
 {
+    public GameObject Head;
+    public GameObject Body;
     GameObject _player;
     Rigidbody2D _rb;
     EnemyData _data;
+    Vector3 direction;
     private List<PlayerController> _playersInTrigger = new List<PlayerController>();
     float LockMove;
 
@@ -55,7 +58,7 @@ public class EnemyController : Unit
 
     private void MoveToPlayer()
     {
-        Vector3 direction = _player.transform.position - transform.position;
+        direction = _player.transform.position - transform.position;
         direction.z = 0;
 
         float moveStep = _data.MoveSpeed * Time.deltaTime;
@@ -69,6 +72,18 @@ public class EnemyController : Unit
             direction.Normalize();
             _rb.velocity = direction * _data.MoveSpeed;
         }
+
+
+        if (direction.x > 0)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        }
+
+        
     }
 
     public override void Hit(float damage)
@@ -89,7 +104,9 @@ public class EnemyController : Unit
         MainGameplay.Instance.Enemies.Remove(this);
         GameObject.Destroy(gameObject);
         int n = Random.Range(1, 5);
-
+        GameObject _head= GameObject.Instantiate(Head, transform.position, Quaternion.identity);
+        _head.GetComponent<Rigidbody2D>().AddForce(-direction * 5, ForceMode2D.Impulse);
+        GameObject.Instantiate(Body, transform.position, Quaternion.identity);
 
         // Exécution d'une action en fonction du nombre aléatoire généré
         switch (n)
@@ -149,5 +166,6 @@ public class EnemyController : Unit
         Debug.Log("test");
         Vector3 dir = (transform.position - Origin).normalized;
         _rb.AddForce(dir * 3f, ForceMode2D.Impulse);
+        
     }
 }
