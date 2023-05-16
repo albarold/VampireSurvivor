@@ -10,10 +10,12 @@ public class MainMenu : MonoBehaviour
     public void OnClickPlay()
     {
         SceneManager.LoadScene("MainGameplay");
+        Debug.Log("Play");
     }
 
     public void OnClickQuit()
     {
+        Debug.Log("quit");
         Application.Quit();
     }
     
