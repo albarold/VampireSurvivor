@@ -15,22 +15,29 @@ MonoBehaviour:
   _waves:
   - _timeToStart: 2
     _timesToRepeat: 8
-    _repeatTimer: 15
+    _repeatTimer: 10
     _enemyCount: 4
     _enemy: {fileID: 11400000, guid: de7771034e75ff04197edc11a666a0a1, type: 2}
     _movementType: 0
     _spawnDistance: 15
   - _timeToStart: 10
     _timesToRepeat: 3
-    _repeatTimer: 20
+    _repeatTimer: 15
     _enemyCount: 1
     _enemy: {fileID: 11400000, guid: fdb51e8dc444cc943ac974d7cfa9bab9, type: 2}
     _movementType: 0
     _spawnDistance: 15
-  - _timeToStart: 60
-    _timesToRepeat: 1
-    _repeatTimer: 20
+  - _timeToStart: 45
+    _timesToRepeat: 6
+    _repeatTimer: 15
     _enemyCount: 10
-    _enemy: {fileID: 11400000, guid: de7771034e75ff04197edc11a666a0a1, type: 2}
+    _enemy: {fileID: 11400000, guid: ac7a27c7a535d2047a9edd1db2475eab, type: 2}
     _movementType: 0
-    _spawnDistance: 20.9
+    _spawnDistance: 12.84
+  - _timeToStart: 65
+    _timesToRepeat: 4
+    _repeatTimer: 20
+    _enemyCount: 4
+    _enemy: {fileID: 11400000, guid: fdb51e8dc444cc943ac974d7cfa9bab9, type: 2}
+    _movementType: 0
+    _spawnDistance: 20.5

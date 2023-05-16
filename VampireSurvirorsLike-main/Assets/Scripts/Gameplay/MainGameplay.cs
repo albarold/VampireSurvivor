@@ -151,7 +151,7 @@ public class MainGameplay : MonoBehaviour
 
     void SetVictory()
     {
-        EffectsManager.Instance.audioManager.Play("Win");
+        EffectsManager.Instance.audioManager.Play("Winned");
         State = GameState.GameOver;
         _gameUIManager.DisplayVictory();
     }

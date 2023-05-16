@@ -21,7 +21,7 @@ MonoBehaviour:
     - rid: 0
       type: {class: WeaponLasso, ns: Gameplay.Weapons, asm: Assembly-CSharp}
       data:
-        _damageMin: 12
+        _damageMin: 10
         _damageMax: 25
         _coolDown: 3
         _projectileNumber: 1

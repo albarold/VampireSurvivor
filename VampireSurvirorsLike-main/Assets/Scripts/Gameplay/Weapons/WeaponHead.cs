@@ -23,7 +23,8 @@ namespace Gameplay.Weapons
         void Start()
         {
             Debug.Log("aze");
-            
+            EffectsManager.Instance.audioManager.Play("HeadSpin");
+
         }
         public override void Update( PlayerController player )
         {
@@ -35,7 +36,7 @@ namespace Gameplay.Weapons
             var playerPosition = player.transform.position;
             if (go == null)
             {
-                EffectsManager.Instance.audioManager.Play("HeadSpin");
+                
                 go = GameObject.Instantiate(_prefab, playerPosition+new Vector3(0,3f,0), Quaternion.identity);
             }
 

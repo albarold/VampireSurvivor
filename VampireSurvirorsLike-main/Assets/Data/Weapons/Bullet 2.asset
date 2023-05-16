@@ -23,7 +23,7 @@ MonoBehaviour:
       data:
         _damageMin: 12
         _damageMax: 25
-        _coolDown: 3
+        _coolDown: 2.5
         _projectileNumber: 3
         _prefab: {fileID: 3633932044844237191, guid: 4660ac6ef21504147b176616fca71ee3, type: 3}
         _speed: 7

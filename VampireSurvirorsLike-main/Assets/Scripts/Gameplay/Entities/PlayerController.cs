@@ -12,6 +12,7 @@ public class PlayerController : Unit
     [SerializeField] LevelUpData _levelUpData;
 
     [SerializeField] LifeBar _lifeBar;
+    [SerializeField] GameObject Bloodsplash;
     float LockMove = 0;
     float Invicible = 0;
     bool IsInvicible = false;
@@ -150,7 +151,8 @@ public class PlayerController : Unit
 
             _lifeBar.SetValue(Life, LifeMax);
             EffectsManager.Instance.audioManager.Play("PlayerHit");
-            EffectsManager.Instance.vfxManager.PlayFx("Blood", transform.position);
+            GameObject slash = GameObject.Instantiate(Bloodsplash, transform.position, Quaternion.identity);
+            Destroy(slash, 1);
             if (Life <= 0)
             {
                 _rb.velocity = new Vector2();

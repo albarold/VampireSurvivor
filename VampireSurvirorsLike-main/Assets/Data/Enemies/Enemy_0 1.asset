@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7b86bd7009b2e34bad173aea64b75ea, type: 3}
-  m_Name: LevelUpData
+  m_Script: {fileID: 11500000, guid: dc039ccc39f388b4d87fcee0a88c2b02, type: 3}
+  m_Name: Enemy_0 1
   m_EditorClassIdentifier: 
-  _xpForLevels: 0000000000000000030000000a00000014000000230000002d0000003700000041000000
+  _life: 25
+  _damagePerSeconds: 1500
+  _moveSpeed: 1.5
+  _prefab: {fileID: 7654918703708801626, guid: 7ce86f5d82cd8dc46a7b12ffddd9a355, type: 3}
+  _spriteOverride: {fileID: 0}

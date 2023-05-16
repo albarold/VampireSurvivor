@@ -98,7 +98,7 @@ public class EnemyController : Unit
 
         if (Life <= 0)
         {
-            EffectsManager.Instance.vfxManager.PlayFx("Hit", transform.position);
+            
             Die();
         }
     }
