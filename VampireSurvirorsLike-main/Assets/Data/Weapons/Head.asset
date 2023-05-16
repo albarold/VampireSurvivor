@@ -27,5 +27,5 @@ MonoBehaviour:
         _projectileNumber: 0
         _prefab: {fileID: 3633932044844237191, guid: a5ca224c378934441ba4c10e80ff8951, type: 3}
         _speed: 0.4
-        NoheadPlayer: {fileID: 21300000, guid: a2d5c36997a995b4a89cf705c4799452, type: 3}
-        NoheadAnim: {fileID: 9100000, guid: 50983617284a33b42b5fc0eafd279d2b, type: 2}
+        NoheadPlayer: {fileID: 21300000, guid: 946a3ddf7e269534b959aa98f45e8a3c, type: 3}
+        NoheadAnim: {fileID: 9100000, guid: 6a83ea378e00af44ab978933f31e3169, type: 2}
