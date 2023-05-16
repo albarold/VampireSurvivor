@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemy_0
   m_EditorClassIdentifier: 
   _life: 12
-  _damagePerSeconds: 15
+  _damagePerSeconds: 1500
   _moveSpeed: 1
   _prefab: {fileID: 7654918703708801626, guid: 7ce86f5d82cd8dc46a7b12ffddd9a355, type: 3}
   _spriteOverride: {fileID: 0}
