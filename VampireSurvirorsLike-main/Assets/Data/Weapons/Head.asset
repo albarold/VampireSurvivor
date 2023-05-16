@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weapon:
     rid: 3428052207234187264
-  _slotIndex: 1
+  _slotIndex: 3
   references:
     version: 2
     RefIds:
