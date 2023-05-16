@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8980172895944532839}
   - component: {fileID: 7444565212702630037}
   m_Layer: 3
-  m_Name: Head
+  m_Name: EnemyHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3633932044844237191}
   m_LocalRotation: {x: -0, y: -0, z: -0.2588186, w: 0.965926}
   m_LocalPosition: {x: 0.08, y: -0.04, z: 0}
-  m_LocalScale: {x: 2.178, y: 2.178, z: 2.178}
+  m_LocalScale: {x: 2.8, y: 2.8, z: 2.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
