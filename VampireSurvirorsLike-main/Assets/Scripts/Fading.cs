@@ -23,7 +23,7 @@ public class Fading : MonoBehaviour
         Timer -= Time.deltaTime;
      
         Color colo = gameObject.GetComponent<SpriteRenderer>().color;
-        colo.a = Timer / ;
+        colo.a = Timer / cooldown;
         gameObject.GetComponent<SpriteRenderer>().color = colo;
     }
 }
