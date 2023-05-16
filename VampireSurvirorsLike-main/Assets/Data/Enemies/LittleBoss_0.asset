@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LittleBoss_0
   m_EditorClassIdentifier: 
   _life: 75
-  _damagePerSeconds: 20
+  _damagePerSeconds: 300
   _moveSpeed: 2
   _prefab: {fileID: 7654918703708801626, guid: bc63bbf30f2977e4d9ed2c16afa08b56, type: 3}
   _spriteOverride: {fileID: 0}

@@ -132,7 +132,7 @@ public class EnemyController : Unit
             case 3:
                 {
                     var Life = GameObject.Instantiate(MainGameplay.Instance.PrefabLife, transform.position, Quaternion.identity);
-                    Life.GetComponent<CollectableLife>().Initialize(5);
+                    Life.GetComponent<CollectableLife>().Initialize(2);
                     break;
                 }
             case 4:

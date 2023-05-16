@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abf730199d69e9438dd07125b6d3c8a, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  _life: 35
+  _life: 20
   _moveSpeed: 4
   _weapons:
   - {fileID: 11400000, guid: 7fc9e32731c831e46ba0de5e74790c60, type: 2}
